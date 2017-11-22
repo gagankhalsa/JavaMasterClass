@@ -11,5 +11,6 @@ public class Main {
 	short shortval=(short)(500+10*(intvalue+bytevalue));
 	System.out.println("long value"+longvalue);
 		System.out.println("Short value"+shortval);
+		//This is java 8 example
     }
 }
