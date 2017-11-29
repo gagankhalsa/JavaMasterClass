@@ -12,5 +12,16 @@ public class Main {
 	System.out.println("long value"+longvalue);
 		System.out.println("Short value"+shortval);
 		//This is java 8 example
+
+		boolean isCar=true;
+		boolean wasCar=isCar ? true:false;
+		if (wasCar)
+		{
+			System.out.print("was car is true");
+		}
+		else
+		{
+			System.out.print("was car is false");
+		}
     }
 }
