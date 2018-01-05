@@ -15,6 +15,7 @@ public class Methods_example {
         displayHighScorePos("tom",scoreValue);
          scoreValue=calculateHighScore(50);
         displayHighScorePos("jot",scoreValue);
+        System.out.println();
         //obj.calculateHighScore(1);
     }
 
