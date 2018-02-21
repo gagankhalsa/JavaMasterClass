@@ -7,34 +7,43 @@ import java.util.Scanner;
  */
 public class Arrays {
     static Scanner scanner=new Scanner(System.in);
-    //static int[] myIntArray = new int[10];
     public static void main(String args[]) {
         int[] values=getIntegers(5);
         for (int i=0;i<values.length;i++)
         {
-            System.out.println("element "+i+"typed value was "+values[i]);
+           System.out.println("element "+i+"typed value was "+values[i]);
         }
         System.out.println("Average of an Array "+getAverage(values));
-      /*  //{1,2,3,4,5};
-        for (int i = 0; i <10; i++) {
-           myIntArray[i]=i*10;
-        }
-       *//* for (int i=0;i<10;i++)
+        //Practice of Arrays*/
+        System.out.println(".............practice of arrays.................");
+        double [] codes=new double[10];
+        System.out.println(codes.length);
+        int[] a1={1,2,3,4};
+        int[] a2={10,20,30};
+        System.out.println("length of Array before "+a1.length);
+        System.out.println(" Element of Array at this 1st position"+a1[1]);
+        a1=a2;
+        System.out.println("length of Array after "+a1.length);
+        System.out.println("\" Element of Array at this 1st position\""+a1[1]);
+        int []temp=incrementArray(a1);
+        for(int i=0;i<temp.length;i++)
         {
-            System.out.println("Element "+i+"value is "+myIntArray[i]);
+            System.out.println("values of temp "+temp[i]);
         }
-        System.out.println(myIntArray[2]);*//*
-        printArray(myIntArray);
+        //temp=a;
+        System.out.println("length of array a.length is "+temp.length);
+
+        }
+    public static int [] incrementArray(int[] a){
+
+        int[] temp=new int[a.length];
+        for (int i=0;i<a.length;i++) {
+            temp[i] = a[i];
+            System.out.println("increment array " + (temp[i]+2));
+        }
+        return temp;
 
 
-    }
-    public static void printArray(int[] array)
-    {
-        for(int i=0;i<array.length;i++)
-        {
-            System.out.println(array[i]);
-        }
-        array[2]=89;*/
 
     }
     public static int[] getIntegers(int number){
