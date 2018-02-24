@@ -1,7 +1,7 @@
 package Arrays;
 
 import java.util.Scanner;
-
+import java.util.*;
 public class Array_challenge {
      public static Scanner sc= new Scanner(System.in);
 
@@ -20,7 +20,7 @@ int[] integers=getInteger(5);
         return array;
     }
     public static void print(int[] arr){
-
+//int[] cop=Arrays.copyOf(arr,arr.length);
         int temp=0,i;
         boolean flag=true;
         while(flag) {
