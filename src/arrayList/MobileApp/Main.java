@@ -40,6 +40,7 @@ public class Main {
          }
         }
     }
+
 private static void addNewContact(){
     System.out.println("enter the contact name:");
     String name=scanner.nextLine();
